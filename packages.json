@@ -1,0 +1,93 @@
+{
+    "packages": {
+        "golive/mail-service": {
+            "dev-master": {
+                "name": "golive/mail-service",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "http://stash.golive.rs:7990/scm/pac/mail-service.git",
+                    "reference": "77978e000dbd4d9388928a9297a7a585925ceadc"
+                },
+                "require": {
+                    "php": ">=5.5",
+                    "zendframework/zendframework": "2.5.*"
+                },
+                "time": "2015-10-30 10:11:57",
+                "type": "zf2 module",
+                "autoload": {
+                    "psr-0": {
+                        "Mail": "src/"
+                    },
+                    "classmap": [
+                        "src/"
+                    ]
+                },
+                "autoload-dev": {
+                    "psr-0": {
+                        "MailTest": "test/"
+                    }
+                },
+                "authors": [
+                    {
+                        "name": "Vukasin Stankovic",
+                        "email": "vukasin.stankovic@golive.rs"
+                    }
+                ],
+                "description": "Provide service for sending email(s).",
+                "homepage": "http://stash.golive.rs:7990/projects/PAC/repos/mail-service",
+                "keywords": [
+                    "mail",
+                    "smtp",
+                    "zf2"
+                ]
+            }
+        },
+        "golive/telekom-sms-service": {
+            "1.0.0": {
+                "name": "golive/telekom-sms-service",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "http://stash.golive.rs:7990/scm/pac/telekom-sms-service.git",
+                    "reference": "2088bdfe78da8566649c38a73c5b3238d29f90a2"
+                },
+                "require": {
+                    "php": ">=5.5",
+                    "zendframework/zendframework": "2.5.*"
+                },
+                "time": "2015-11-09 13:31:25",
+                "type": "zf2 module",
+                "autoload": {
+                    "psr-0": {
+                        "Sms": "src/"
+                    },
+                    "classmap": [
+                        "src/"
+                    ]
+                },
+                "autoload-dev": {
+                    "psr-0": {
+                        "Sms": "test/"
+                    }
+                },
+                "authors": [
+                    {
+                        "name": "Vukasin Stankovic",
+                        "email": "vukasin.stankovic@golive.rs"
+                    }
+                ],
+                "description": "Provide service for sending sms(s).",
+                "homepage": "http://stash.golive.rs:7990/projects/PAC/repos/telekom-sms-service",
+                "keywords": [
+                    "sms",
+                    "smsc",
+                    "telekom",
+                    "zf2"
+                ]
+            }
+        }
+    }
+}
